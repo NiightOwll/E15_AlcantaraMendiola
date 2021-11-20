@@ -5,12 +5,13 @@
    
 }
 @font-face {
-  font-family: monument-valley-12;
-  src: url(../fonts/MonumentValley12-X55o.otf);
   font-family: lockjaw;
   src: url(../fonts/Lockjaw-epLl.ttf);
   font-family: alegreyasanssc;
-  src: url(../fonts/alegreya/AlegreyaSansSC-Light.ttf);
+  src: url(../fonts/AlegreyaSansSC-Light.ttf);
+  font-family: greenhostel;
+  src: url(../fonts/GreenHostel-vma2y.ttf);
+  
 }
 
 $rosa: #FF00FF;
@@ -28,9 +29,9 @@ body{
   background-color: $blanco;
   font-family: alegreyasanssc;
 }
-text{
-    font-family: '';
-}
+
+    
+
 
 
 body{
@@ -39,9 +40,10 @@ body{
 }
 
 
-.container2{
+.container2 {
   position: relative;
-  width: 50%;
+  width: 100%;
+height: 100%;
 }
 
 .image {
@@ -52,19 +54,55 @@ body{
 
 .overlay {
   position: absolute;
+  top: 0;
   bottom: 0;
-  left: 100%;
+  left: 0;
   right: 0;
-  background-color:linear-gradient( rgba(22,24,45,1) 0%, rgba(13,95,117,1) 67%, rgba(6,155,178,1) 100%);
-  overflow: hidden;
-  width: 0;
   height: 100%;
+  width: 100%;
+  opacity: 0;
   transition: .5s ease;
+  background-color:#0D5F75;
+
 }
 
-.container:hover .overlay {
-  width: 100%;
-  left: 0;
+.container2:hover .overlay {
+  opacity: 1;
+}
+.tituloproyectos{
+  font-family: lockjaw;
+  color:#D0DDEA;
+  font-size: 100px ;
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.barrastitulo{
+  font-family: lockjaw;
+  font-size: 50px;
+  color: #65EDFF;
+  
+}
+
+.barrastitulo2{
+  font-family: alegreyasanssc;
+  font-size: 20px;
+  color:#D0DDEA
+}
+.offcanvas-header{
+  
+  background-color: #626876;
+}
+.offcanvas-title{
+  font-family: greenhostel;
+  color: #64DEEF;
+  background-color: #626876;
 }
 .offcanvas-body{
   background-color: #D0DDEA;
@@ -76,9 +114,18 @@ body{
   font-size: 18px;
 }
 .boton-fuera{
+  //position: fixed;
   padding:0%;
   outline-style: none;
 }
+.boton-fuera2{
+  position: fixed;
+  padding:0%;
+  outline-style: none;
+}
+
+
+
 .text {
   white-space: nowrap; 
   color: white;
@@ -91,6 +138,30 @@ body{
   -ms-transform: translate(-50%, -50%);
 }
 
+/* Centered text */
+.titulopag{
+  font-family: lockjaw;
+  font-size: 150px;
+  color:#D0DDEA;
+  position:absolute;
+  top: 30%;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, -50%);
+}
+/* eslogan*/
+.eslogan{
+  font-family: alegreyasanssc;
+  font-size: 40px;
+  color:#D0DDEA;
+  position: absolute;
+  top:60%;
+  left:50%;
+  bottom:50%;
+  transform: translate(-50%, -50%);
+
+}
+
 .col1{
   font-family: lockjaw;
   color: #65EDFF;
@@ -101,14 +172,24 @@ body{
   color: #65EDFF;
   text-align: center;
   padding: 0%;
+  padding-top: 5%;
   margin: 0%;
 }
+
+
 .faq{
   font-family: alegreyasanssc;
   color:#D0DDEA;
   font-size: 18px;
 }
-
+.titulopro{
+  font-family: lockjaw;
+  font-size: 50px;
+  color: #65EDFF;
+  text-align: center;
+  padding: 0%;
+  margin:0%;
+  }
 .sobremi-titulo{
   font-family: lockjaw;
   font-size: 60px;
